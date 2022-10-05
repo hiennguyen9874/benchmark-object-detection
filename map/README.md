@@ -7,6 +7,7 @@
 - YOLOV5n: `python3 export.py --data ./data/coco.yaml --weights ./weights/yolov5n.pt --imgsz 640 --batch-size 1 --device 0 --simplify --opset 14 --include onnx --cleanup --dynamic-batch`
 - YOLOV5s: `python3 export.py --data ./data/coco.yaml --weights ./weights/yolov5s.pt --imgsz 640 --batch-size 1 --device 0 --simplify --opset 14 --include onnx --cleanup --dynamic-batch`
 - YOLOV5m: `python3 export.py --data ./data/coco.yaml --weights ./weights/yolov5m.pt --imgsz 640 --batch-size 1 --device 0 --simplify --opset 14 --include onnx --cleanup --dynamic-batch`
+- YOLOV5l: `python3 export.py --data ./data/coco.yaml --weights ./weights/yolov5l.pt --imgsz 640 --batch-size 1 --device 0 --simplify --opset 14 --include onnx --cleanup --dynamic-batch`
 
 ### YOLOv7
 
@@ -27,6 +28,7 @@
 - YOLOv5n: `python3 val.py --data ./data/coco.yaml --weights ./weights/yolov5n.onnx --batch-size 32 --imgsz 640 --max-det 300 --task val --device 0`
 - YOLOv5s: `python3 val.py --data ./data/coco.yaml --weights ./weights/yolov5s.onnx --batch-size 32 --imgsz 640 --max-det 300 --task val --device 0`
 - YOLOv5m: `python3 val.py --data ./data/coco.yaml --weights ./weights/yolov5m.onnx --batch-size 32 --imgsz 640 --max-det 300 --task val --device 0`
+- YOLOv5l: `python3 val.py --data ./data/coco.yaml --weights ./weights/yolov5l.onnx --batch-size 32 --imgsz 640 --max-det 300 --task val --device 0`
 
 ### YOLOv7
 
