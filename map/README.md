@@ -59,7 +59,7 @@ Export model to onnx file, batch size = 1, test on [YOLOv5](https://github.com/h
 - YOLOX-S: `python3 val.py --data ./data/coco.yaml --weights ./weights/yolox_s.onnx --batch-size 32 --imgsz 640 --max-det 300 --task val --device 0 --bgr --no-normalize --conf-thres 0.001 --iou-thres 0.6`
 - YOLOX-M: `python3 val.py --data ./data/coco.yaml --weights ./weights/yolox_m.onnx --batch-size 32 --imgsz 640 --max-det 300 --task val --device 0 --bgr --no-normalize --conf-thres 0.001 --iou-thres 0.6`
 
-### DAMO-[DAMO-YOLO](https://github.com/hiennguyen9874/DAMO-YOLO)
+### [DAMO-YOLO](https://github.com/hiennguyen9874/DAMO-YOLO)
 
 - DAMO-YOLO-T: `python3 val.py --data ./data/coco.yaml --weights ./weights/damoyolo_tinynasL20_T.onnx --batch-size 32 --imgsz 640 --max-det 300 --task val --device 1 --damo --no-normalize --conf-thres 0.001 --iou-thres 0.6`
 - DAMO-YOLO-S: `python3 val.py --data ./data/coco.yaml --weights ./weights/damoyolo_tinynasL25_S.onnx --batch-size 32 --imgsz 640 --max-det 300 --task val --device 0 --damo --no-normalize --conf-thres 0.001 --iou-thres 0.6`
