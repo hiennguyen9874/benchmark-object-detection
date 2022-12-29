@@ -29,3 +29,9 @@
 - YOLOX-S: `python3 tools/export_onnx.py --output-name ./weights/yolox_s.onnx -n yolox-s -c ./weights/yolox_s.pth --topk-all 100 --iou-thres 0.65 --conf-thres 0.25 --type-nms 0 --simplify --cleanup --end2end --trt --type-nms 0 --batch-size 1`
 
 - YOLOX-M: `python3 tools/export_onnx.py --output-name ./weights/yolox_m.onnx -n yolox-m -c ./weights/yolox_m.pth --topk-all 100 --iou-thres 0.65 --conf-thres 0.25 --type-nms 0 --simplify --cleanup --end2end --trt --type-nms 0 --batch-size 1`
+
+### DAMO-YOLO
+
+- DAMO-YOLO-T: `python3 tools/converter.py -f configs/damoyolo_tinynasL20_T.py -c ./weights/damoyolo_tinynasL20_T.pth --batch_size 1 --img_size 640 --end2end --iou-thres 0.65 --conf-thres 0.25 --topk-all 100 --device 0 --opset 14`
+- DAMO-YOLO-S: `python3 tools/converter.py -f configs/damoyolo_tinynasL25_S.py -c ./weights/damoyolo_tinynasL25_S.pth --batch_size 1 --img_size 640 --end2end --iou-thres 0.65 --conf-thres 0.25 --topk-all 100 --device 0 --opset 14`
+- DAMO-YOLO-M: `python3 tools/converter.py -f configs/damoyolo_tinynasL35_M.py -c ./weights/damoyolo_tinynasL35_M.pth --batch_size 1 --img_size 640 --end2end --iou-thres 0.65 --conf-thres 0.25 --topk-all 100 --device 0 --opset 14`
