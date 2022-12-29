@@ -1,0 +1,53 @@
+[application]
+enable-perf-measurement=1
+perf-measurement-interval-sec=2
+
+[tiled-display]
+enable=0
+
+[source0]
+enable=1
+gpu-id=0
+#Type - 1=CameraV4L2 2=URI 3=MultiURI 4: RTSP
+type=2
+uri=file:///opt/nvidia/deepstream/deepstream/samples/streams/sample_720p.h264
+cudadec-memtype=0
+nvbuf-memory-type=0
+
+[osd]
+enable=0
+
+[streammux]
+gpu-id=0
+##Boolean property to inform muxer that sources are live
+live-source=0
+# buffer-pool-size=1
+batch-size=1
+##time out in usec, to wait after the first buffer is available
+##to push the batch even if the complete batch is not formed
+batched-push-timeout=40000
+## Set muxer output width and height
+width=1280
+height=720
+##Enable to maintain aspect ratio wrt source, and allow black borders, works
+##along with width, height properties
+# enable-padding=1
+nvbuf-memory-type=0
+## If set to TRUE, system timestamp will be attached as ntp timestamp
+## If set to FALSE, ntp timestamp from rtspsrc, if available, will be attached
+# attach-sys-ts-as-ntp=1
+
+# config-file property is mandatory for any gie section.
+# Other properties are optional and if set will override the properties set in
+# the infer config file.
+[primary-gie]
+enable=1
+# batch-size=1
+gpu-id=0
+interval=0
+gie-unique-id=1
+nvbuf-memory-type=0
+config-file=./models/yolov6s-efficient-nms.txt
+
+[tests]
+file-loop=1
