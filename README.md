@@ -6,18 +6,24 @@
     </a>
 </div>
 
-| model       | type nms     | Image size | type code      | FPS    | mAP<sup>val<br>0.5:0.95 | mAP<sup>val<br>0.5 | Command                                             |
-| ----------- | ------------ | ---------- | -------------- | ------ | ----------------------- | ------------------ | --------------------------------------------------- |
-| YOLOv5n     | EfficientNMS | 640        | deepstream-app | 573.93 | 0.277                   | 0.45               | `deepstream-app -c ./yolov5n-efficient-nms.txt`     |
-| YOLOv5s     | EfficientNMS | 640        | deepstream-app | 355.60 | 0.371                   | 0.561              | `deepstream-app -c ./yolov5s-efficient-nms.txt`     |
-| YOLOv5m     | EfficientNMS | 640        | deepstream-app | 198.14 | 0.448                   | 0.633              | `deepstream-app -c ./yolov5m-efficient-nms.txt`     |
-| YOLOv5l     | EfficientNMS | 640        | deepstream-app | 130.62 | 0.485                   | 0.666              | `deepstream-app -c ./yolov5l-efficient-nms.txt`     |
-| YOLOv7-Tiny | EfficientNMS | 640        | deepstream-app | 353.13 | 0.37                    | 0.546              | `deepstream-app -c ./yolov7-tiny-efficient-nms.txt` |
-| YOLOv7      | EfficientNMS | 640        | deepstream-app | 129.50 | 0.508                   | 0.69               | `deepstream-app -c ./yolov7-efficient-nms.txt`      |
-| YOLOX-S     | EfficientNMS | 640        | deepstream-app | 274.60 | 0.403                   | 0.591              | `deepstream-app -c ./yolox-s-efficient-nms.txt`     |
-| YOLOX-M     | EfficientNMS | 640        | deepstream-app | 163.50 | 0.468                   | 0.653              | `deepstream-app -c ./yolox-m-efficient-nms.txt`     |
-| YOLOX-Nano  | EfficientNMS | 416        | deepstream-app | 579.42 | 0.257                   | 0.416              | `deepstream-app -c ./yolox-nano-efficient-nms.txt`  |
-| YOLOX-Tiny  | EfficientNMS | 416        | deepstream-app | 593.56 | 0.328                   | 0.506              | `deepstream-app -c ./yolox-tiny-efficient-nms.txt`  |
-| DAMO-YOLO-T | EfficientNMS | 640        | deepstream-app | 406.09 | 0.426                   | 0.594              | `deepstream-app -c ./damoyolo_tinynasL20_T.txt`     |
-| DAMO-YOLO-S | EfficientNMS | 640        | deepstream-app | 278.67 | 0.462                   | 0.635              | `deepstream-app -c ./damoyolo_tinynasL25_S.txt`     |
-| DAMO-YOLO-M | EfficientNMS | 640        | deepstream-app | 176.39 | 0.494                   | 0.667              | `deepstream-app -c ./damoyolo_tinynasL35_M.txt`     |
+| model         | type nms     | Image size | type code      | FPS    | mAP<sup>val<br>0.5:0.95 | mAP<sup>val<br>0.5 | Command                                             |
+| ------------- | ------------ | ---------- | -------------- | ------ | ----------------------- | ------------------ | --------------------------------------------------- |
+| YOLOv5n       | EfficientNMS | 640        | deepstream-app | 573.93 | 0.277                   | 0.45               | `deepstream-app -c ./yolov5n-efficient-nms.txt`     |
+| YOLOv5s       | EfficientNMS | 640        | deepstream-app | 355.60 | 0.371                   | 0.561              | `deepstream-app -c ./yolov5s-efficient-nms.txt`     |
+| YOLOv5m       | EfficientNMS | 640        | deepstream-app | 198.14 | 0.448                   | 0.633              | `deepstream-app -c ./yolov5m-efficient-nms.txt`     |
+| YOLOv5l       | EfficientNMS | 640        | deepstream-app | 130.62 | 0.485                   | 0.666              | `deepstream-app -c ./yolov5l-efficient-nms.txt`     |
+| YOLOv7-Tiny   | EfficientNMS | 640        | deepstream-app | 353.13 | 0.37                    | 0.546              | `deepstream-app -c ./yolov7-tiny-efficient-nms.txt` |
+| YOLOv7        | EfficientNMS | 640        | deepstream-app | 129.50 | 0.508                   | 0.69               | `deepstream-app -c ./yolov7-efficient-nms.txt`      |
+| YOLOX-S       | EfficientNMS | 640        | deepstream-app | 274.60 | 0.403                   | 0.591              | `deepstream-app -c ./yolox-s-efficient-nms.txt`     |
+| YOLOX-M       | EfficientNMS | 640        | deepstream-app | 163.50 | 0.468                   | 0.653              | `deepstream-app -c ./yolox-m-efficient-nms.txt`     |
+| YOLOX-Nano    | EfficientNMS | 416        | deepstream-app | 579.42 | 0.257                   | 0.416              | `deepstream-app -c ./yolox-nano-efficient-nms.txt`  |
+| YOLOX-Tiny    | EfficientNMS | 416        | deepstream-app | 593.56 | 0.328                   | 0.506              | `deepstream-app -c ./yolox-tiny-efficient-nms.txt`  |
+| DAMO-YOLO-T   | EfficientNMS | 640        | deepstream-app | 406.09 | 0.426                   | 0.594              | `deepstream-app -c ./damoyolo_tinynasL20_T.txt`     |
+| DAMO-YOLO-S   | EfficientNMS | 640        | deepstream-app | 278.67 | 0.462                   | 0.635              | `deepstream-app -c ./damoyolo_tinynasL25_S.txt`     |
+| DAMO-YOLO-M   | EfficientNMS | 640        | deepstream-app | 176.39 | 0.494                   | 0.667              | `deepstream-app -c ./damoyolo_tinynasL35_M.txt`     |
+| YOLOv6-N      | EfficientNMS | 640        | deepstream-app |        | 0.356                   | 0.514              |                                                     |
+| YOLOv6-T      | EfficientNMS | 640        | deepstream-app |        | 0.402                   | 0.57               |                                                     |
+| YOLOv6-S      | EfficientNMS | 640        | deepstream-app |        | 0.431                   | 0.604              |                                                     |
+| YOLOv6-M      | EfficientNMS | 640        | deepstream-app |        | 0.485                   | 0.662              |                                                     |
+| YOLOv6-L-ReLU | EfficientNMS | 640        | deepstream-app |        | 0.505                   | 0.685              |                                                     |
+| YOLOv6-L      | EfficientNMS | 640        | deepstream-app |        | 0.51                    | 0.692              |                                                     |

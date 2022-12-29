@@ -35,3 +35,13 @@
 - DAMO-YOLO-T: `python3 tools/converter.py -f configs/damoyolo_tinynasL20_T.py -c ./weights/damoyolo_tinynasL20_T.pth --batch_size 1 --img_size 640 --end2end --iou-thres 0.65 --conf-thres 0.25 --topk-all 100 --device 0 --opset 14`
 - DAMO-YOLO-S: `python3 tools/converter.py -f configs/damoyolo_tinynasL25_S.py -c ./weights/damoyolo_tinynasL25_S.pth --batch_size 1 --img_size 640 --end2end --iou-thres 0.65 --conf-thres 0.25 --topk-all 100 --device 0 --opset 14`
 - DAMO-YOLO-M: `python3 tools/converter.py -f configs/damoyolo_tinynasL35_M.py -c ./weights/damoyolo_tinynasL35_M.pth --batch_size 1 --img_size 640 --end2end --iou-thres 0.65 --conf-thres 0.25 --topk-all 100 --device 0 --opset 14`
+
+
+### YOLOv6
+
+- YOLOv6-N: `python3 ./deploy/ONNX/export_onnx.py --weights ./weights/yolov6n.pt --img 640 --batch 1 --simplify --end2end --trt-version 8 --topk-all 100 --iou-thres 0.65 --conf-thres 0.25`
+- YOLOv6-T: `python3 ./deploy/ONNX/export_onnx.py --weights ./weights/yolov6t.pt --img 640 --batch 1 --simplify --end2end --trt-version 8 --topk-all 100 --iou-thres 0.65 --conf-thres 0.25`
+- YOLOv6-S: `python3 ./deploy/ONNX/export_onnx.py --weights ./weights/yolov6s.pt --img 640 --batch 1 --simplify --end2end --trt-version 8 --topk-all 100 --iou-thres 0.65 --conf-thres 0.25`
+- YOLOv6-M: `python3 ./deploy/ONNX/export_onnx.py --weights ./weights/yolov6m.pt --img 640 --batch 1 --simplify --end2end --trt-version 8 --topk-all 100 --iou-thres 0.65 --conf-thres 0.25`
+- YOLOv6-L-ReLU: `python3 ./deploy/ONNX/export_onnx.py --weights ./weights/yolov6l_relu.pt --img 640 --batch 1 --simplify --end2end --trt-version 8 --topk-all 100 --iou-thres 0.65 --conf-thres 0.25`
+- YOLOv6-L: `python3 ./deploy/ONNX/export_onnx.py --weights ./weights/yolov6l.pt --img 640 --batch 1 --simplify --end2end --trt-version 8 --topk-all 100 --iou-thres 0.65 --conf-thres 0.25`

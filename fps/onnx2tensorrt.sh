@@ -12,7 +12,14 @@
 /usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolox-tiny-efficient-nms.onnx --saveEngine=./models/yolox-tiny-efficient-nms.trt --fp16 --workspace=14336
 /usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolox-s-efficient-nms.onnx --saveEngine=./models/yolox-s-efficient-nms.trt --fp16 --workspace=14336
 /usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolox-m-efficient-nms.onnx --saveEngine=./models/yolox-m-efficient-nms.trt --fp16 --workspace=14336
-# # DAMO-YOLO
+# DAMO-YOLO
 /usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/damoyolo_tinynasL20_T_end2end.onnx --saveEngine=./models/damoyolo_tinynasL20_T_end2end.trt --fp16 --workspace=14336
 /usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/damoyolo_tinynasL25_S_end2end.onnx --saveEngine=./models/damoyolo_tinynasL25_S_end2end.trt --fp16 --workspace=14336
 /usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/damoyolo_tinynasL35_M_end2end.onnx --saveEngine=./models/damoyolo_tinynasL35_M_end2end.trt --fp16 --workspace=14336
+# YOLOv6
+/usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolov6l.onnx --saveEngine=./models/yolov6l.trt --fp16 --workspace=14336
+/usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolov6l_relu.onnx --saveEngine=./models/yolov6l_relu.trt --fp16 --workspace=14336
+/usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolov6m.onnx --saveEngine=./models/yolov6m.trt --fp16 --workspace=14336
+/usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolov6n.onnx --saveEngine=./models/yolov6n.trt --fp16 --workspace=14336
+/usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolov6s.onnx --saveEngine=./models/yolov6s.trt --fp16 --workspace=14336
+/usr/src/tensorrt/bin/trtexec --device=1 --onnx=./models/yolov6t.onnx --saveEngine=./models/yolov6t.trt --fp16 --workspace=14336
