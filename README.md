@@ -8,24 +8,20 @@ Test deepstream [fps](./fps/) and [mAP](./map/) in state-of-the-art yolo series 
     </a>
 </div>
 
-| model         | type nms     | Image size | type code      | FPS    | mAP<sup>val<br>0.5:0.95 | mAP<sup>val<br>0.5 | Command                                              |
-| ------------- | ------------ | ---------- | -------------- | ------ | ----------------------- | ------------------ | ---------------------------------------------------- |
-| YOLOv5n       | EfficientNMS | 640        | deepstream-app | 573.93 | 0.277                   | 0.45               | `deepstream-app -c ./yolov5n-efficient-nms.txt`      |
-| YOLOv5s       | EfficientNMS | 640        | deepstream-app | 355.60 | 0.371                   | 0.561              | `deepstream-app -c ./yolov5s-efficient-nms.txt`      |
-| YOLOv5m       | EfficientNMS | 640        | deepstream-app | 198.14 | 0.448                   | 0.633              | `deepstream-app -c ./yolov5m-efficient-nms.txt`      |
-| YOLOv5l       | EfficientNMS | 640        | deepstream-app | 130.62 | 0.485                   | 0.666              | `deepstream-app -c ./yolov5l-efficient-nms.txt`      |
-| YOLOv7-Tiny   | EfficientNMS | 640        | deepstream-app | 353.13 | 0.37                    | 0.546              | `deepstream-app -c ./yolov7-tiny-efficient-nms.txt`  |
-| YOLOv7        | EfficientNMS | 640        | deepstream-app | 129.50 | 0.508                   | 0.69               | `deepstream-app -c ./yolov7-efficient-nms.txt`       |
-| YOLOX-S       | EfficientNMS | 640        | deepstream-app | 274.60 | 0.403                   | 0.591              | `deepstream-app -c ./yolox-s-efficient-nms.txt`      |
-| YOLOX-M       | EfficientNMS | 640        | deepstream-app | 163.50 | 0.468                   | 0.653              | `deepstream-app -c ./yolox-m-efficient-nms.txt`      |
-| YOLOX-Nano    | EfficientNMS | 416        | deepstream-app | 596.70 | 0.257                   | 0.416              | `deepstream-app -c ./yolox-nano-efficient-nms.txt`   |
-| YOLOX-Tiny    | EfficientNMS | 416        | deepstream-app | 566.46 | 0.328                   | 0.506              | `deepstream-app -c ./yolox-tiny-efficient-nms.txt`   |
-| DAMO-YOLO-T   | EfficientNMS | 640        | deepstream-app | 406.09 | 0.426                   | 0.594              | `deepstream-app -c ./damoyolo_tinynasL20_T.txt`      |
-| DAMO-YOLO-S   | EfficientNMS | 640        | deepstream-app | 278.67 | 0.462                   | 0.635              | `deepstream-app -c ./damoyolo_tinynasL25_S.txt`      |
-| DAMO-YOLO-M   | EfficientNMS | 640        | deepstream-app | 176.39 | 0.494                   | 0.667              | `deepstream-app -c ./damoyolo_tinynasL35_M.txt`      |
-| YOLOv6-N      | EfficientNMS | 640        | deepstream-app | 751.83 | 0.356                   | 0.514              | `deepstream-app -c ./yolov6n-efficient-nms.txt`      |
-| YOLOv6-T      | EfficientNMS | 640        | deepstream-app | 438.16 | 0.402                   | 0.57               | `deepstream-app -c ./yolov6t-efficient-nms.txt`      |
-| YOLOv6-S      | EfficientNMS | 640        | deepstream-app | 359.44 | 0.431                   | 0.604              | `deepstream-app -c ./yolov6s-efficient-nms.txt`      |
-| YOLOv6-M      | EfficientNMS | 640        | deepstream-app | 190.89 | 0.485                   | 0.662              | `deepstream-app -c ./yolov6m-efficient-nms.txt`      |
-| YOLOv6-L-ReLU | EfficientNMS | 640        | deepstream-app | 121.64 | 0.505                   | 0.685              | `deepstream-app -c ./yolov6l_relu-efficient-nms.txt` |
-| YOLOv6-L      | EfficientNMS | 640        | deepstream-app | 106.52 | 0.51                    | 0.692              | `deepstream-app -c ./yolov6l-efficient-nms.txt`      |
+| model    | type nms     | Image size | type code      | FPS    | Latency (99%) | Throughput (qps) | mAP<sup>val<br>0.5:0.95 | mAP<sup>val<br>0.5 |
+| -------- | ------------ | ---------- | -------------- | ------ | ------------- | ---------------- | ----------------------- | ------------------ |
+| YOLOv8-n | EfficientNMS | 640        | deepstream-app | 572.67 | 2.00586       | 647.276          | 0.373                   | 0.526              |
+| YOLOv8-s | EfficientNMS | 640        | deepstream-app | 318.91 | 3.54181       | 343.913          | 0.448                   | 0.617              |
+| YOLOv8-m | EfficientNMS | 640        | deepstream-app | 154.71 | 7.20209       | 161.416          | 0.501                   | 0.671              |
+| YOLOv8-l | EfficientNMS | 640        | deepstream-app | 101.09 | 10.617        | 104.364          | 0.527                   | 0.697              |
+| YOLOv8-x | EfficientNMS | 640        | deepstream-app | 67.22  | 16.6089       | 68.6962          | 0.537                   | 0.707              |
+| YOLOv9-t | EfficientNMS | 640        | deepstream-app | 369.57 | 3.10204       | 400.717          | 0.383                   | 0.531              |
+| YOLOv9-s | EfficientNMS | 640        | deepstream-app | 245.04 | 4.41357       | 259.683          | 0.467                   | 0.631              |
+| YOLOv9-m | EfficientNMS | 640        | deepstream-app | 140.00 | 7.8609        | 145.698          | 0.511                   | 0.678              |
+| YOLOv9-c | EfficientNMS | 640        | deepstream-app | 126.93 | 8.49884       | 132.231          | 0.529                   | 0.701              |
+| YOLOv9-e | EfficientNMS | 640        | deepstream-app | 55.35  | 20.5296       | 56.3059          | 0.555                   | 0.727              |
+| YOLO11-n | EfficientNMS | 640        | deepstream-app | 539.31 | 2.15894       | 606.265          | 0.392                   | 0.551              |
+| YOLO11-s | EfficientNMS | 640        | deepstream-app | 313.79 | 3.49353       | 338.597          | 0.465                   | 0.635              |
+| YOLO11-m | EfficientNMS | 640        | deepstream-app | 168.75 | 6.55048       | 177.052          | 0.513                   | 0.682              |
+| YOLO11-l | EfficientNMS | 640        | deepstream-app | 130.65 | 8.25171       | 135.618          | 0.531                   | 0.699              |
+| YOLO11-x | EfficientNMS | 640        | deepstream-app | 73.69  | 14.0748       | 74.572           | 0.544                   | 0.714              |

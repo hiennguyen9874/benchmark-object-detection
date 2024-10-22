@@ -27,8 +27,8 @@ batch-size=1
 ##to push the batch even if the complete batch is not formed
 batched-push-timeout=40000
 ## Set muxer output width and height
-width=1280
-height=720
+width=1920
+height=1080
 ##Enable to maintain aspect ratio wrt source, and allow black borders, works
 ##along with width, height properties
 # enable-padding=1
@@ -47,7 +47,8 @@ gpu-id=0
 interval=0
 gie-unique-id=1
 nvbuf-memory-type=0
-config-file=./models/yolov5s-efficient-nms.txt
+config-file=./models/pgie.txt
+model-engine-file=./models/yolo11x.trt
 
 [tests]
 file-loop=1
