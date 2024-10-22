@@ -4,7 +4,19 @@ Test deepstream [fps](./fps/) and [mAP](./map/) in state-of-the-art yolo series 
 
 <div align="center">
     <a href="./">
-        <img src="./plot.png" width="75%"/>
+        <img src="./fps.png" width="75%"/>
+    </a>
+</div>
+
+<div align="center">
+    <a href="./">
+        <img src="./latency.png" width="75%"/>
+    </a>
+</div>
+
+<div align="center">
+    <a href="./">
+        <img src="./throughput.png" width="75%"/>
     </a>
 </div>
 
